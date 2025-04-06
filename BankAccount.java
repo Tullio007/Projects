@@ -54,7 +54,7 @@ public class BankAccount {
         System.out.print("Enter account holder: ");
         String AccountHolder = sc.nextLine();
 
-        System.out.print("Insert the amount of the initial value: ");
+        System.out.print("Insert the amount of the initial value!: ");
         double InitialDeposit = sc.nextDouble();
 
         NewBankAccount account = new NewBankAccount(AccountNumber, AccountHolder, InitialDeposit);
