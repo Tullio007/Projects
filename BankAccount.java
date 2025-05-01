@@ -7,18 +7,18 @@ class NewBankAccount {
 
 
     public NewBankAccount(int AccountNumber, String AccountHolder, double InitialDeposit){
-    this.AccountHolder = AccountHolder;
-    this.AccountNumber = AccountNumber;
-    if (InitialDeposit > 0){
-        this.Balance = InitialDeposit;
-    }
-    else{
-        this.Balance = 0;
-    }
+        this.AccountHolder = AccountHolder;
+        this.AccountNumber = AccountNumber;
+        if (InitialDeposit > 0){
+            this.Balance = InitialDeposit;
+        }
+        else{
+            this.Balance = 0;
+        }
     }
 
     public void Deposit(double value){
-            if (value >= 0){
+        if (value >= 0){
             Balance += value; 
         }        
         
@@ -26,6 +26,7 @@ class NewBankAccount {
 
     public void Withdraw(double value){
         double TotalValue = value + 5;
+        
         if (Balance >= TotalValue) {
             Balance -= TotalValue;
         } else {
@@ -39,8 +40,6 @@ class NewBankAccount {
         System.out.println("Account Number: " + AccountNumber);
         System.out.println("Balance: " + Balance);
     }
-
-    
 }
 
 public class BankAccount {
