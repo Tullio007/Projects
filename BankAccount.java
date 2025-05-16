@@ -60,13 +60,13 @@ public class BankAccount {
 
         account.Data();
 
-        System.out.println("Enter the amount for deposit: ");
+        System.out.println("Enter the amount for deposit please: ");
         double DepositValue = sc.nextDouble();
         account.Deposit(DepositValue);
         System.out.println("Your account after the deposit: ");
         account.Data();
 
-        System.out.println("Enter the withdraw value: ");
+        System.out.println("Enter the withdraw value please: ");
         double withdrawal = sc.nextDouble();
         account.Withdraw(withdrawal);
         System.out.println("Your account after the withdrawal: ");
